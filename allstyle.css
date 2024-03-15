@@ -1,0 +1,10 @@
+@keyframes goup {
+    0% {transform:translateY(10px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
+}
+
+@keyframes arrow {
+    0% {transform:translateX(0)}
+    50% {transform:translateX(-5px);}
+    100% {transform:translateX(0);}
+}
