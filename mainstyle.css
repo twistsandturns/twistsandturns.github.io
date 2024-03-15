@@ -1,5 +1,5 @@
 @keyframes goup {
-    0% {transform:translateY(10px) scale(0.95); opacity:0;}
+    0% {transform:translateY(10px) scale(0.99); opacity:0;}
     100% {transform:translateY(0) scale(1); opacity:1;}
 }
 
@@ -78,7 +78,7 @@ body {
     animation-name: goup;
     animation-duration: 500ms;
     animation-delay: calc(var(--animation-order) * 100ms);
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
 }
 
 .seasonbutton:hover {

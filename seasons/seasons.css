@@ -1,6 +1,6 @@
 @keyframes goup {
-    0% {transform:translateY(10px); opacity:0;}
-    100% {transform:translateY(0); opacity:1;}
+    0% {transform:translateY(10px) scale(0.99); opacity:0;}
+    100% {transform:translateY(0) scale(1); opacity:1;}
 }
 
 @keyframes arrow {
@@ -120,7 +120,7 @@ h1 {
     animation-name: goup;
     animation-duration: 1s;
     animation-delay: calc(var(--animation-order) * 25ms);
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
 }
 
 #contestant:hover {
@@ -165,7 +165,7 @@ h1 {
     animation-name: goup;
     animation-duration: 1s;
     animation-delay: 100ms;
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
 }
 
 #button:hover {
