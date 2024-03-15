@@ -1,0 +1,213 @@
+* {
+    font-family: "Rubik";
+    color: white
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+body {
+    background-color: #222;
+}
+
+#headerlink {
+    color: white;
+    font-weight: 400;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#activeheader {
+    color: black;
+    font-weight: 600;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#tatmage {
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+#tatdd {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #7AC39C;
+    background-image: url("./images/tatddbg.png");
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 30px;
+    height: 200px;
+    align-items: center;
+    background-position: right bottom;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 40%;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.2) inset;
+}
+
+#tatdd:hover, #tatglobal:hover, #tatjh:hover, #tatmp:hover, #tatsa:hover, #tatss:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+#tatdd:active, #tatglobal:active, #tatjh:active, #tatmp:active, #tatsa:active, #tatss:active {
+    transform: scale(1);
+    transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#tatglobal {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #7AC39C;
+    background-image: url("./images/tatglobalbg.png");
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 30px;
+    height: 200px;
+    align-items: center;
+    background-position: center;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 40%;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.2) inset;
+}
+
+#tatjh {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #7AC39C;
+    background-image: url("./images/tatjhbg.png");
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 30px;
+    height: 200px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 40%;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.2) inset;
+}
+
+#tatmp {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #EDB240;
+    background-image: url("./images/tatmpbg.png");
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 30px;
+    height: 200px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 40%;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.2) inset;
+}
+
+#tatsa {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #28323C;
+    background-image: url("./images/tatsabg.png");
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 30px;
+    height: 200px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 40%;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.05) inset;
+}
+
+#tatss {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #28323C;
+    background-image: url("./images/tatssbg.png");
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 30px;
+    height: 200px;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 40%;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.05) inset;
+}
+
+#seasons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+}
+
+#cautiontape {
+    background-image: url(images/cautiontape.jpg);
+    height: 50px;
+    background-size: contain;
+    margin: -8px;
+}
+
+#headerlink:hover {
+    background-color: #333;
+}
