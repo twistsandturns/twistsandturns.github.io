@@ -1,0 +1,18 @@
+body, html {
+    background-color: #7AC39C;
+    background-image: url(../../images/tatddbg.png);
+    background-position: right bottom;
+    background-size: contain;
+}
+
+h1 {
+    color: #008080
+}
+
+#headerlink, #btntitle, #conname, #coninfo, #resultsnum {
+    color: #2d4b3a;
+}
+
+.material-symbols-outlined {
+    color: #2d4b3a;
+}

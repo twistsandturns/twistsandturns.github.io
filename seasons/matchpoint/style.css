@@ -1,0 +1,16 @@
+body, html {
+    background-color: #7AC39C;
+    background-image: url(../../images/tatmpbg.png);
+}
+
+h1 {
+    color: black
+}
+
+#headerlink {
+    color: white;
+}
+
+.material-symbols-outlined {
+    color: white;
+}

@@ -1,0 +1,16 @@
+body, html {
+    background-color: #7AC39C;
+    background-image: url(../../images/tatsabg.png);
+}
+
+h1 {
+    color: #008080
+}
+
+#headerlink, #btntitle, #conname, #coninfo, #resultsnum {
+    color: white;
+}
+
+.material-symbols-outlined {
+    color: white;
+}
