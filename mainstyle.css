@@ -129,6 +129,7 @@ body, html {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: stretch;
+    margin-bottom: 15px;
 }
 
 #cautiontape {
