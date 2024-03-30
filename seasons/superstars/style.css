@@ -14,3 +14,7 @@ h1 {
 .material-symbols-outlined {
     color: white;
 }
+
+#conname {
+    margin-bottom: 14px;
+}
