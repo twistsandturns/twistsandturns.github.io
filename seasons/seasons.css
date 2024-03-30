@@ -23,6 +23,7 @@ header {
     position: sticky;
     top: 0;
     mask: linear-gradient(0deg, transparent, black 50%);
+    z-index: 1;
 }
 
 body, html {
