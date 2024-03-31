@@ -5,14 +5,11 @@ body, html {
     background-size: contain;
 }
 
-h1 {
-    color: #008080
-}
-
-#headerlink, #btntitle, #conname, #coninfo, #resultsnum {
+#btntitle, #conname, #coninfo, #resultsnum {
     color: #2d4b3a;
 }
 
-.material-symbols-outlined {
-    color: #2d4b3a;
+
+#headerlink, .material-symbols-outlined {
+    color: white;
 }

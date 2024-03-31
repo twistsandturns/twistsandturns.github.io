@@ -1,5 +1,5 @@
 @keyframes goup {
-    0% {transform:translateY(10px) scale(0.99); opacity:0;}
+    0% {transform:translateY(10px) scale(0.98); opacity:0;}
     100% {transform:translateY(0) scale(1); opacity:1;}
 }
 
@@ -9,8 +9,6 @@
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
     padding: 15px;
     margin: -8px;
     display: flex;
@@ -20,8 +18,20 @@ header {
     z-index: 1;
 }
 
+header::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    height: 65px;
+    backdrop-filter: blur(10px);
+    mask: linear-gradient(0deg, transparent, black 50%);
+}
+
 body, html {
-    background-color: #222;
+    background-color: #191919;
     height: 99%;
 }
 
@@ -37,6 +47,7 @@ body, html {
     padding-right: 15px;
     border-radius: 20px;
     transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    filter: drop-shadow(0 0px 7px rgba(0, 0, 0, 0.8));
 }
 
 #activeheader {
@@ -51,15 +62,17 @@ body, html {
     padding-right: 15px;
     background-color: white;
     border-radius: 20px;
+    filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 0.3));
 }
 
 #tatmage {
     margin-right: 15px;
     margin-left: 10px;
+    filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 0.3));
 }
 
 .seasonbutton {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 10px;
     margin-left: 10px;
     display: flex;
@@ -75,10 +88,11 @@ body, html {
     flex-basis: 0;
     min-width: 40%;
     transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
-    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2) inset,
+    0 8px 20px 0 rgba(0, 0, 0, 0.1);
     animation-name: goup;
-    animation-duration: 500ms;
-    animation-delay: calc(var(--animation-order) * 100ms);
+    animation-duration: 1s;
+    animation-delay: calc(var(--animation-order) * 75ms);
     animation-fill-mode: backwards;
 }
 
@@ -140,7 +154,8 @@ body, html {
 }
 
 #headerlink:hover {
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: brightness(1.5)
 }
 
 a {
