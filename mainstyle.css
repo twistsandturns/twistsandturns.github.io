@@ -72,7 +72,7 @@ body, html {
 }
 
 .seasonbutton {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-right: 10px;
     margin-left: 10px;
     display: flex;
@@ -94,6 +94,7 @@ body, html {
     animation-duration: 1s;
     animation-delay: calc(var(--animation-order) * 75ms);
     animation-fill-mode: backwards;
+    margin-bottom: 15px;
 }
 
 .seasonbutton:hover {
@@ -143,7 +144,7 @@ body, html {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: stretch;
-    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 #cautiontape {
@@ -181,4 +182,20 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#discord {
+    background-color: #313338;
+}
+
+#tatrecap {
+    background-color: #3a664e;
+}
+
+#mpclicker {
+    background-color: #7e5d1c;
+}
+
+iframe {
+    border-radius: 15px;
 }

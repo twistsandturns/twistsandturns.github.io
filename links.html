@@ -10,16 +10,20 @@
 </head>
 <header>
     <img src="images/TAT.svg" height="35" id="tatmage">
-    <a id="headerlink" href="home.html">Home</a>
-    <a id="headerlink" href="seasons.html">Seasons</a>
-    <a id="activeheader" href="links.html">Links</a>
+    <a id="headerlink" href="home">Home</a>
+    <a id="headerlink" href="seasons">Seasons</a>
+    <a id="activeheader" href="links">Links</a>
 </header>
 <body>
-    <div id="middle">
-        <div id="underconstruction">
-            <img src="images/under construction.png" width="463px">
-            <p id="construction"><b>This page is under construction!</b></p>
-            <p id="construction" style="font-size: 25px;">Try visiting the <a href="seasons.html">Seasons</a> page.</p>
-        </div>
+    <div id="seasons">
+        <div class="seasonbutton" id="tatrecap" onclick="location.href='tatrecap';" style="cursor:pointer; --animation-order: 1;">
+            <img src="images/tatrecap.svg" height="100" style="filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6)); max-width: 95%;">
+         </div>
+        <div class="seasonbutton" id="mpclicker" onclick="location.href='https://scratch.mit.edu/projects/816152694/';" style="cursor:pointer; --animation-order: 3;">
+            <img src="images/mpclicker.svg" height="100" style="filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6)); max-width: 95%;">
+         </div>
+         <div class="seasonbutton" id="discord" onclick="location.href='https://discord.gg/RRVkJYFSzy';" style="cursor:pointer; --animation-order: 5;">
+            <img src="images/discord.svg" height="100" style="filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6));">
+         </div>
     </div>
 </body> 
