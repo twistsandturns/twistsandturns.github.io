@@ -28,11 +28,17 @@ header::before {
     height: 65px;
     backdrop-filter: blur(10px);
     mask: linear-gradient(0deg, transparent, black 50%);
+    background-color: rgba(25, 25, 25, 0.3);
 }
 
 body, html {
     background-color: #191919;
+    background-image: url(/images/bg.png);
     height: 99%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 #headerlink {
@@ -95,6 +101,10 @@ body, html {
     animation-delay: calc(var(--animation-order) * 75ms);
     animation-fill-mode: backwards;
     margin-bottom: 15px;
+}
+
+.seasonbutton img {
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.1));
 }
 
 .seasonbutton:hover {
@@ -182,6 +192,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #discord {
@@ -198,4 +209,108 @@ a {
 
 iframe {
     border-radius: 15px;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.1));
+}
+
+#description {
+    font-size: 25px;
+    margin-top: -20px;
+    text-align: center;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.1));
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    max-width: 900px;
+    border-radius: 30px;
+    padding: 50px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2) inset,
+    0 8px 20px 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 0 50vw rgba(0, 0, 0,0.7);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-name: goup;
+    animation-duration: 1s;
+    animation-delay: calc(var(--animation-order) * 75ms);
+    animation-fill-mode: backwards;
+}
+
+.contestantsbg {
+    background-image: url(/images/contestants.png);
+    background-size: 200%;
+
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+#emerald {
+    background-image: url(/images/Host\ Icons/Emeraldbg.png);
+    background-size: cover;
+}
+
+#grapejuice {
+    background-image: url(/images/Host\ Icons/Grape\ Juicebg.png);
+    background-size: cover;
+}
+
+#pme {
+    background-image: url(/images/Host\ Icons/PMEbg.png);
+    background-size: cover;
+}
+
+#lightsaber {
+    background-image: url(/images/Host\ Icons/Lightsaberbg.png);
+    background-size: cover;
+}
+
+.column {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grow {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: none;
+    max-width: 900px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 5px;;
+}
+
+.column p, .column img, .seasonbutton img {
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-name: goup;
+    animation-duration: 1s;
+    animation-delay: calc(var(--animation-order) * 75ms);
+    animation-fill-mode: backwards;
+}
+
+.seasonbutton:hover img {
+    transform: scale(1.05);
 }
