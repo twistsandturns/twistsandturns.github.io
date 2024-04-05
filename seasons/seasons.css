@@ -183,6 +183,7 @@ h1 {
     animation-duration: 1s;
     animation-delay: calc(var(--animation-order) * 25ms);
     animation-fill-mode: backwards;
+    cursor: pointer;
 }
 
 #button:hover {
@@ -218,7 +219,8 @@ h1 {
     transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
     backdrop-filter: blur(10px);
     filter: brightness(1.1);
-    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2) inset,
+    0 8px 20px 0 rgba(0, 0, 0, 0.1);
     animation-name: goup;
     animation-duration: 1s;
     animation-delay: calc(var(--animation-order) * 25ms);
@@ -227,6 +229,12 @@ h1 {
     max-width: 64px;
     min-height: 64px;
     max-height: 64px;
+    cursor: pointer;
+}
+
+#results:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 #resultsnum {
