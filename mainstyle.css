@@ -5,7 +5,7 @@
 
 * {
     font-family: "Rubik";
-    color: white
+    color: white;
 }
 
 header {
@@ -32,13 +32,13 @@ header::before {
 }
 
 body, html {
-    background-color: #191919;
+    background-color: #1f1f1f;
     background-image: url(/images/bg.png);
     height: 99%;
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: 100%;
 }
 
 #headerlink {
