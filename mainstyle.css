@@ -32,7 +32,7 @@ header::before {
 }
 
 body, html {
-    background-color: #1f1f1f;
+    background-color: #191919;
     background-image: url(/images/bg.png);
     height: 99%;
     background-repeat: no-repeat;
